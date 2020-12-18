@@ -1,0 +1,54 @@
+// // // // // // // // // // // // // // // // // // // // // // //
+//                                                                //
+//                        CSS VARIABLES                           //
+//                                                                //
+// // // // // // // // // // // // // // // // // // // // // // //
+
+//COLOR VARIABLES
+$blood: #ed1c24;
+
+//FONT VARIABLES
+$baseFamily: "din-condensed";
+$thinWeight: 200;
+$baseWeight: 300;
+$boldWeight: 600;
+
+$baseFont: 1.5rem;
+$mediumFont: 1.5rem;
+$largeFont: 2.5rem;
+$massiveFont: 3rem;
+
+//SPACERS
+$sp1: 0.25rem;
+$sp2: 0.5rem;
+$sp3: 1rem;
+$sp4: 1.5rem;
+$sp5: 3rem;
+$sp6: 4rem;
+$sp7: 5rem;
+
+// // // // // // // // // // // // // // // // // // // // // // //
+//                                                                //
+//                            IMPORTS                             //
+//                                                                //
+// // // // // // // // // // // // // // // // // // // // // // //
+
+//BOOTSTRAP COLOR OVERRIDES/ADDITIONS
+$enable-responsive-font-sizes: true;
+
+@import "bootstrap/scss/bootstrap.scss";
+
+// // // // // // // // // // // // // // // // // // // // // // //
+//                                                                //
+//                            GENERAL                             //
+//                                                                //
+// // // // // // // // // // // // // // // // // // // // // // //
+html {
+}
+
+body {
+  font-family: $baseFamily;
+  font-weight: $baseWeight;
+  //font-size: $baseFont;
+  overflow-x: hidden;
+}
