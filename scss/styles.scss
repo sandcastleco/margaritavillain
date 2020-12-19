@@ -37,12 +37,32 @@ body {
   font-family: $baseFamily;
   font-size: $baseFont;
   overflow-x: hidden;
+  overflow-y: hidden;
+  //background: black;
+}
+
+.mainText {
+  color: white;
+  mix-blend-mode: difference;
 }
 
 .link {
-  color: dimgrey;
-
   &:hover {
+    .linkHide {
+      display: none;
+    }
+
+    .linkShow {
+      display: inline;
+    }
+  }
+
+  .linkHide {
+    color: dimgrey;
+  }
+
+  .linkShow {
+    display: none;
     color: lightgrey;
   }
 }
@@ -52,5 +72,30 @@ body {
 }
 
 .rotate {
-  transform: rotateZ(1.5deg);
+  transform: rotateZ(1.3deg);
+}
+
+.bg {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  opacity: 0.95;
+}
+
+.sig {
+  background: black;
+  color: white;
+  padding: 0 $sp1;
+  cursor: pointer;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.sig:hover ~ .bg {
+  visibility: visible !important;
+  right: -20vw;
+  width: 100vw;
+  height: auto;
 }
