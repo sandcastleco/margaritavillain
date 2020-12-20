@@ -58,7 +58,7 @@ body {
   }
 
   .linkHide {
-    color: dimgrey;
+    color: grey;
   }
 
   .linkShow {
@@ -102,6 +102,7 @@ body {
   background: black;
   color: white;
   padding: 0 $sp1;
+  margin: $sp1 0 0 0;
   cursor: default;
 
   &:hover {
