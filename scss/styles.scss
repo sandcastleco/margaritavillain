@@ -69,6 +69,22 @@ body {
 
 .super {
   vertical-align: super;
+  letter-spacing: 0.25rem;
+  font-weight: 700;
+
+  &:hover {
+    cursor: pointer;
+
+    .one {
+      color: #ef38df;
+      //background: #ef38df;
+    }
+
+    .two {
+      color: #2aeaff;
+      //background: #2aeaff;
+    }
+  }
 }
 
 .rotate {
@@ -86,10 +102,10 @@ body {
   background: black;
   color: white;
   padding: 0 $sp1;
-  cursor: pointer;
+  cursor: default;
 
   &:hover {
-    cursor: pointer;
+    cursor: default;
   }
 }
 
