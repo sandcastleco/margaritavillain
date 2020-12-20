@@ -44,6 +44,7 @@ body {
 .mainText {
   color: white;
   mix-blend-mode: difference;
+  letter-spacing: 0.05rem;
 }
 
 .link {
@@ -102,8 +103,9 @@ body {
   background: black;
   color: white;
   padding: 0 $sp1;
-  margin: $sp1 0 0 0;
+  margin: $sp1 $sp2 0 0;
   cursor: default;
+  transform: rotateZ(-1deg);
 
   &:hover {
     cursor: default;
