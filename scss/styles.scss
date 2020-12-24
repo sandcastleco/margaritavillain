@@ -8,7 +8,7 @@
 $baseFamily: "dico-typewriter";
 
 $baseFont: 1rem;
-//$mobileFont: 1.5rem;
+$mobileFont: 1.5rem;
 
 //SPACERS
 $sp1: 0.25rem;
@@ -46,9 +46,9 @@ body {
   color: white;
   mix-blend-mode: difference;
   letter-spacing: 0.05rem;
-  //font-size: $mobileFont;
+  font-size: $mobileFont;
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(lg) {
     font-size: $baseFont;
   }
 }
@@ -103,6 +103,14 @@ body {
   position: fixed;
   top: 0;
   opacity: 0.95;
+}
+
+.ending {
+  font-size: $mobileFont;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $baseFont;
+  }
 }
 
 .sig {
